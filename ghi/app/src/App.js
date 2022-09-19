@@ -16,6 +16,7 @@ import ServiceHistory from './ServiceHistory';
 import SalesList from './SalesList';
 import SaleRecordForm from './SaleRecordForm';
 import SalesPersonSales from './SalesPersonSales';
+import CarStatus from './CarStatus';
 
 function App(props) {
   return (
@@ -32,6 +33,7 @@ function App(props) {
             <Route path ="" element={<VehicleModelList models={props.models} />} />
             <Route path="new" element={<ModelForm/>} />
           </Route>
+          <Route path="available" element={<CarStatus />} />
           <Route path="automobiles" >
             <Route path="" element={<AutoList autos={props.autos}/>} />
             <Route path="new" element={<AutoForm/>} />

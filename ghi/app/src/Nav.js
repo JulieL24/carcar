@@ -38,6 +38,9 @@ function Nav() {
                   <NavLink className="dropdown-item" to="/models/new">Create Model</NavLink>
                 </li>
               </ul>
+              <li className="nav-item">
+              <NavLink className="nav-link" to="/available">Car Availability</NavLink>
+            </li>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

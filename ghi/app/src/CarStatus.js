@@ -34,7 +34,7 @@ function CarStatus(props){
                 <thead>
                 <tr>
                 <th>VIN</th>
-                <th>Available ?</th>
+                <th>Sold ?</th>
 
                 </tr>
                 </thead>
@@ -45,7 +45,7 @@ function CarStatus(props){
                         <>
                         <tr key={car.id}>
                         <td> { car.vin} </td>
-                        <td>{ car.is_sold }</td>
+                        <td> { car.is_sold.toString()} </td>
                     </tr>
                         </>
                     )
